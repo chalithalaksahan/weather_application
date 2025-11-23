@@ -2,7 +2,6 @@ console.log("js loaded!!")
 
 
 
-
 function searchWeather(){
   let currentLocation = document.getElementById('location_id').value;
 
