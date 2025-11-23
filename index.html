@@ -29,8 +29,7 @@
 
            <div class="header_right_side">
 
-            <input id="location_id" type="text" placeholder="Search Weather" >
-            <button onclick="searchWeather()">Search</button>
+            <input id="location_id" type="text" placeholder="Search Weather" onkeypress="if(event.key === 'Enter') searchWeather()" >
            </div> 
 
         </div>
