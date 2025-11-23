@@ -6,7 +6,7 @@ function searchWeather(){
   let currentLocation = document.getElementById('location_id').value;
 
 
-fetch(`http://api.weatherapi.com/v1/forecast.json?key=89afedd00f684cd08a695828251611&q=${currentLocation}&days=1&aqi=no&alerts=no`)
+fetch(`https://api.weatherapi.com/v1/forecast.json?key=89afedd00f684cd08a695828251611&q=${currentLocation}&days=1&aqi=no&alerts=no`)
 .then(res => res.json())
 .then(data => {
 document.getElementById("main_status_image").src="https:"+ data.current.condition.icon;
